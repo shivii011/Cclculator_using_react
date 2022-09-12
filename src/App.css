@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* below three lines of code is for not get copy or get blue colour when we accedentaly double click on that object*/
+  -webkit-user-select: none; 
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
+}
+body {
+  background-color: burlywood;
+  display: grid;
+  place-content: center;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  font-size: 2rem;
+}
+.container {
+  height:80vh;
+  width: 50vh;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+ 
+}
+.wraper {
+  display: grid;
+  height:100%;
+  width:100%;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(6,1fr);
+  gap:10px;
+}
+.screen {
+  grid-column: 1/-1;
+  color:black;
+  background-color: white;
+  text-align: right;
+  padding:0.5rem;
+  font-size:4rem;
+  overflow:hidden;
+  border-radius: 10px;
+  
+}
+
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: rgb(71, 70, 70);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: grey;
+}
+.light-gray {
+background-color: grey;
+color: black
+}
+.light-gray:hover{
+  background-color: rgb(71, 70, 70) ;
+  color: white
+}
+.orange{
+  background-color: orange;
+  color :black
+}
+.orange:hover{
+  color:white;
+  background-color: burlywood;
+}
+.zero{
+  grid-column: 1 / span 2;
+  border-radius: 20px;
+  align-items:center;
+  padding: 2px;
+  margin: 2px;
+}
